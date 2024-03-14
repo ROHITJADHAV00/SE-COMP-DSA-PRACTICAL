@@ -6,7 +6,7 @@ public class SetOperationsNew {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Set<Integer> setA = new HashSet<>();
-        Set<Integer> setB = new HashSet<>();//HemrajJadhav
+        Set<Integer> setB = new HashSet<>();//rohit Jadhav
 
         int choice;
         do {
@@ -35,12 +35,12 @@ public class SetOperationsNew {
                     setA.add(scanner.nextInt());
                     break;
                 case 2:
-                    //HemrajJadhav
+                    / Rohitjadhav
                     System.out.print("Enter element to add to set B: ");
                     setB.add(scanner.nextInt());
                     break;
                 case 3:
-                    //HemrajJadhav
+                    //rohit Jadhav
                     System.out.print("Enter element to delete from set A: ");
                     setA.remove(scanner.nextInt());
                     break;
@@ -48,52 +48,52 @@ public class SetOperationsNew {
                     System.out.print("Enter element to delete from set B: ");
                     setB.remove(scanner.nextInt());
                     break;
-                case 5:
+                case 5:// Rohit jadhav
                     System.out.println("Elements in set A: " + setA);
                     break;
                 case 6:
-                    //HemrajJadhav
+                    //rohit Jadhav
                     System.out.println("Elements in set B: " + setB);
                     break;
                 case 7:
                     System.out.print("Enter element to search in set A: ");
                     System.out.println("Element found in set A: " + setA.contains(scanner.nextInt()));
                     break;
-                case 8://HemrajJadhav
+                case 8://rohit Jadhav
                     System.out.print("Enter element to search in set B: ");
                     System.out.println("Element found in set B: " + setB.contains(scanner.nextInt()));
-                    break;//HemrajJadhav
+                    break;//rohitJadhav
                 case 9:
                     System.out.println("Size of set A: " + setA.size());
                     break;
                 case 10:
-                    System.out.println("Size of set B: " + setB.size());                                                                                //HemrajJadhav
+                    System.out.println("Size of set B: " + setB.size());                                                                                //rohit Jadhav
                     break;
                 case 11:
                     Set<Integer> unionSet = new HashSet<>(setA);
                     unionSet.addAll(setB);
                     System.out.println("Union of sets: " + unionSet);
                     break;
-                case 12://HemrajJadhav
+                case 12://rohitJadhav
                     Set<Integer> intersectionSet = new HashSet<>(setA);
                     intersectionSet.retainAll(setB);
                     System.out.println("Intersection of sets: " + intersectionSet);
-                    break;//HemrajJadhav
+                    break;//rohit Jadhav
                 case 13:
                     Set<Integer> differenceSet = new HashSet<>(setA);
-                    differenceSet.removeAll(setB);//HemrajJadhav
+                    differenceSet.removeAll(setB);//Rohit Jadhav
                     System.out.println("Difference of sets (A - B): " + differenceSet);
                     break;
                 case 14:
                     System.out.println("Set A is a subset of set B: " + setB.containsAll(setA));
                     break;
-                case 0://HemrajJadhav
+                case 0://Rohit Jadhav
                     System.out.println("Exiting program.");
                     break;
                 default:
                     System.out.println("Invalid choice. Please enter a valid option.");
             }
-            //HemrajJadhav
+            //rohitJadhav
         } while (choice != 0);
     }
 }
